@@ -1,122 +1,454 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Політика конфіденційності</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
-        }
-        p {
-            margin: 10px 0;
-            text-align: justify;
-        }
-        ul {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-        li {
-            margin: 8px 0;
-        }
-        .divider {
-            border-top: 1px solid #ddd;
-            margin: 20px 0;
-        }
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Політика конфіденційності — Стандартне приєднання</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f5f7fa;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1565C0 0%, #0d47a1 100%);
+      color: #fff;
+      padding: 40px 48px 36px;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-bottom: 6px;
+    }
+    .header .subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    /* Content */
+    .content {
+      padding: 40px 48px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1565C0;
+      border-left: 4px solid #1565C0;
+      padding-left: 12px;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul, ol {
+      margin: 8px 0 12px 20px;
+    }
+    li {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    strong { color: #1a1a2e; }
+
+    /* Norm card */
+    .norm-card {
+      background: #f8faff;
+      border: 1px solid #d0dff5;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+    }
+    .norm-card h3 {
+      margin-top: 0;
+      color: #1565C0;
+      font-size: 15px;
+    }
+    .norm-meta {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .norm-meta strong { color: #333; }
+
+    /* Links */
+    .link-block {
+      margin: 8px 0;
+    }
+    .link-block a {
+      color: #1565C0;
+      text-decoration: none;
+      font-size: 14px;
+      word-break: break-all;
+    }
+    .link-block a:hover { text-decoration: underline; }
+    .link-block .link-note {
+      font-size: 12px;
+      color: #777;
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    /* Usage block */
+    .usage {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e8f5;
+      font-size: 14px;
+      color: #444;
+    }
+    .usage strong { color: #1a1a2e; }
+
+    /* Reference table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    th {
+      background: #1565C0;
+      color: #fff;
+      text-align: left;
+      padding: 9px 14px;
+      font-weight: 600;
+    }
+    td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e8edf5;
+      color: #333;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f5f8ff; }
+    td a { color: #1565C0; font-size: 13px; word-break: break-all; }
+
+    /* Warning box */
+    .warning {
+      background: #fff8e1;
+      border: 1px solid #ffc107;
+      border-left: 4px solid #f57c00;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #4a3800;
+    }
+    .warning .warn-title {
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    /* Denial list */
+    .deny-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .deny-list li::before {
+      content: '❌ ';
+    }
+    .deny-list li { margin-bottom: 4px; }
+
+    /* Rights list */
+    .rights-list li::before {
+      content: '✅ ';
+    }
+    .rights-list { list-style: none; margin-left: 0; }
+    .rights-list li { margin-bottom: 4px; }
+
+    /* Permissions table */
+    .perm-table th:first-child { width: 42%; }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #e8edf5;
+      margin: 32px 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f0f4fb;
+      border-top: 1px solid #dde5f5;
+      padding: 20px 48px;
+      font-size: 13px;
+      color: #777;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .page { margin: 0; border-radius: 0; }
+      .header, .content, .footer { padding: 24px 20px; }
+    }
+  </style>
 </head>
 <body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
     <h1>Політика конфіденційності</h1>
+    <div class="subtitle">Мобільний застосунок <strong style="color:#fff;">«Стандартне приєднання»</strong> &nbsp;|&nbsp; Редакція: квітень 2026 р.</div>
+  </div>
 
-    <h2>1. Загальні положення</h2>
-    <p>Ця Політика конфіденційності визначає порядок обробки інформації під час використання мобільного застосу.</p>
-    <p>Користуючись Додатком, користувач підтверджує свою згоду з умовами цієї Політики конфіденційності.</p>
-    
-    <div class="divider"></div>
+  <div class="content">
 
-    <h2>2. Обробка даних користувача</h2>
-    <p>Додаток не збирає, не зберігає та не обробляє персональні дані користувачів.</p>
-    <p>Усі дані, які вводяться користувачем у Додатку (зокрема значення запитаної та існуючої потужності, параметри мережі та інші розрахункові величини), обробляються виключно локально на пристрої користувача та не передаються розробнику.</p>
-    
-    <div class="divider"></div>
+    <!-- 1 -->
+    <div class="section">
+      <h2>1. Загальні положення</h2>
+      <p>Ця Політика конфіденційності визначає порядок обробки інформації під час використання мобільного застосунку <strong>«Стандартне приєднання»</strong> (надалі — «Додаток»).</p>
+      <p>Користуючись Додатком, користувач підтверджує свою згоду з умовами цієї Політики конфіденційності.</p>
+      <p>Цей додаток не представляє жодну державну установу офіційно.</p>
+    </div>
 
-    <h2>3. Передача даних третім особам</h2>
-    <p>Додаток не здійснює автоматичну передачу даних третім особам та не використовує сервери розробника для обробки даних користувача.</p>
-    <p>Додаток містить функцію добровільного пересилання результатів розрахунку, яка ініціюється виключно користувачем.</p>
-    <p>У такому випадку:</p>
-    <ul>
+    <!-- 2 -->
+    <div class="section">
+      <h2>2. Обробка даних користувача</h2>
+      <p>Додаток <strong>не збирає, не зберігає та не обробляє персональні дані користувачів</strong>.</p>
+      <p>Усі дані, які вводяться користувачем у Додатку (зокрема значення запитаної та існуючої потужності, параметри приєднання, інші необхідні для розрахунку показники), використовуються <strong>виключно для виконання розрахунку</strong> та <strong>обробляються локально на пристрої користувача</strong>.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="section">
+      <h2>3. Передача даних третім особам</h2>
+      <p>Додаток <strong>не здійснює автоматичну передачу даних третім особам</strong> та не використовує сервери розробника для обробки інформації.</p>
+      <p>Додаток містить функцію <strong>добровільного пересилання результатів розрахунку</strong>, яка ініціюється <strong>виключно користувачем</strong> через стандартні засоби операційної системи Android (месенджери, електронна пошта тощо).</p>
+      <p>У такому випадку:</p>
+      <ul>
         <li>передача даних виконується обраним користувачем застосунком;</li>
         <li>розробник не має доступу до інформації, що пересилається;</li>
         <li>дані не зберігаються та не обробляються розробником.</li>
-    </ul>
-    
-    <div class="divider"></div>
+      </ul>
+    </div>
 
-    <h2>4. Призначення та характер розрахунків</h2>
-    <p>Розрахунки, що виконуються в Додатку, здійснюються відповідно до Кодексу систем розподілу та чинних постанов.</p>
-    <p>Результати розрахунку мають довідковий (інформаційний) характер та не є офіційним розрахунком оператора системи розподілу.</p>
-    <p>Остаточні розрахунки здійснюються відповідним оператором системи розподілу відповідно до чинного законодавства.</p>
-    
-    <div class="divider"></div>
+    <!-- 4 -->
+    <div class="section">
+      <h2>4. Призначення та характер розрахунків</h2>
+      <p>Розрахунки, що виконуються в Додатку, здійснюються відповідно до <strong>Кодексу систем розподілу та чинних постанов НКРЕКП</strong> (перелік наведено в розділі 9) на підставі параметрів, введених користувачем.</p>
+      <p>Результати розрахунку мають <strong>довідковий (інформаційний) характер</strong> та <strong>не є офіційним розрахунком оператора системи розподілу</strong>.<br>
+      Остаточні розрахунки здійснюються відповідним оператором системи розподілу відповідно до чинного законодавства.</p>
+    </div>
 
-    <h2>5. Захист інформації</h2>
-    <p>Оскільки Додаток не збирає та не зберігає персональні дані користувачів, ризик несанкціонованого доступу, втрати або компрометації таких даних відсутній.</p>
-    
-    <div class="divider"></div>
+    <!-- 5 -->
+    <div class="section">
+      <h2>5. Захист інформації</h2>
+      <p>Оскільки Додаток не збирає та не зберігає персональні дані користувачів, ризик несанкціонованого доступу, втрати або поширення такої інформації відсутній.</p>
+    </div>
 
-    <h2>6. Права користувача</h2>
-    <p>Користувач має право:</p>
-    <ul>
+    <!-- 6 -->
+    <div class="section">
+      <h2>6. Права користувача</h2>
+      <p>Користувач має право:</p>
+      <ul class="rights-list">
         <li>використовувати Додаток без надання будь-яких персональних даних;</li>
         <li>самостійно приймати рішення щодо пересилання результатів розрахунку третім особам;</li>
         <li>припинити використання Додатка у разі незгоди з цією Політикою конфіденційності.</li>
-    </ul>
-    
-    <div class="divider"></div>
-
-    <h2>7. Зміни до Політики конфіденційності</h2>
-    <p>Розробник залишає за собою право вносити зміни до цієї Політики конфіденційності.</p>
-    <p>Актуальна редакція Політики завжди доступна за посиланням, зазначеним у сторінці Додатка в Google Play.</p>
-    
-    <div class="divider"></div>
-
-    <h2>8. Контактна інформація</h2>
-    <p>З питань, пов'язаних із цією Політикою конфіденційності або роботою Додатка, користувач може звернутися до розробника:</p>
-    <div class="contact-info">
-        <strong>Email:</strong> <a href="mailto:medikovskiya@gmail.com">medikovskiya@gmail.com</a>
+      </ul>
     </div>
 
+    <!-- 7 -->
+    <div class="section">
+      <h2>7. Зміни до Політики конфіденційності</h2>
+      <p>Розробник залишає за собою право вносити зміни до цієї Політики конфіденційності.<br>
+      Актуальна редакція Політики завжди доступна за посиланням, зазначеним у сторінці Додатка в Google Play.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="section">
+      <h2>8. Контактна інформація</h2>
+      <p>З питань, пов'язаних із цією Політикою конфіденційності або роботою Додатка, користувач може звернутися до розробника за електронною адресою:</p>
+      <p><strong>Email:</strong> <a href="mailto:medikovskiya@gmail.com">medikovskiya@gmail.com</a></p>
+    </div>
+
+    <hr>
+
+    <!-- 9 -->
+    <div class="section">
+      <h2>9. Нормативна база розрахунків</h2>
+      <p>Додаток виконує розрахунки плати за стандартне приєднання відповідно до чинного законодавства України. Нижче наведено перелік нормативних документів з прямими посиланнями на офіційні джерела.</p>
+
+      <!-- 9.1 -->
+      <div class="norm-card">
+        <h3>9.1. Закон України «Про ринок електричної енергії»</h3>
+        <div class="norm-meta">
+          <strong>Реквізити:</strong> Закон України від 13.04.2017 № 2019-VIII<br>
+          <strong>Статус:</strong> Чинний (з останніми змінами згідно з Законом від 10.02.2026 № 4777-IX)
+        </div>
+        <div class="link-block">
+          🔗 <a href="https://zakon.rada.gov.ua/laws/show/2019-19" target="_blank">https://zakon.rada.gov.ua/laws/show/2019-19</a>
+          <div class="link-note">Верховна Рада України — Законодавство України</div>
+        </div>
+        <div class="usage">
+          <strong>Застосування в Додатку:</strong> Стаття 21 Закону встановлює обов'язковість надання послуги приєднання електроустановок до мереж, заборону безпідставної відмови та платність послуги. Є базовим законом, на якому ґрунтуються всі підзаконні акти щодо стандартного приєднання.
+        </div>
+      </div>
+
+      <!-- 9.2 -->
+      <div class="norm-card">
+        <h3>9.2. Кодекс систем розподілу</h3>
+        <div class="norm-meta">
+          <strong>Реквізити:</strong> Постанова НКРЕКП від 14.03.2018 № 310 «Про затвердження Кодексу систем розподілу»<br>
+          <strong>Статус:</strong> Чинний (з останніми змінами, внесеними Постановою від 24.03.2026 № 441)
+        </div>
+        <div class="link-block">
+          🔗 <a href="https://zakon.rada.gov.ua/laws/show/v0310874-18" target="_blank">https://zakon.rada.gov.ua/laws/show/v0310874-18</a>
+          <div class="link-note">Верховна Рада України — Законодавство України</div>
+        </div>
+        <div class="link-block" style="margin-top:6px">
+          🔗 <a href="https://www.nerc.gov.ua/acts/pro-zatverdzhennya-kodeksu-sistem-rozpodilu" target="_blank">https://www.nerc.gov.ua/acts/pro-zatverdzhennya-kodeksu-sistem-rozpodilu</a>
+          <div class="link-note">Офіційний вебсайт НКРЕКП</div>
+        </div>
+        <div class="usage">
+          <strong>Застосування в Додатку:</strong> Головний нормативний документ, що безпосередньо регулює порядок та вартість стандартного приєднання. Зокрема визначає:
+          <ul style="margin-top:6px">
+            <li>поняття стандартного приєднання та його ступені (I–IV);</li>
+            <li>допустимі потужності та типи фазності для кожного ступеня;</li>
+            <li>граничні відстані та напруги в точці приєднання (до 300 м по прямій, до 50 кВт включно);</li>
+            <li>строки та порядок надання послуги;</li>
+            <li>типові договори про стандартне приєднання (Додаток 1 до Кодексу).</li>
+          </ul>
+          <p style="margin-top:6px">Саме цей документ є підставою для матриці потужностей: I ступінь — 5 кВт; II — 7/8/10/13 кВт; III — 16/20/25 кВт; IV — 30/40/50 кВт.</p>
+        </div>
+      </div>
+
+      <!-- 9.3 -->
+      <div class="norm-card">
+        <h3>9.3. Правила роздрібного ринку електричної енергії</h3>
+        <div class="norm-meta">
+          <strong>Реквізити:</strong> Постанова НКРЕКП від 14.03.2018 № 312 «Про затвердження Правил роздрібного ринку електричної енергії»<br>
+          <strong>Статус:</strong> Чинний (з останніми змінами згідно з Постановою від 21.10.2025 № 1673)
+        </div>
+        <div class="link-block">
+          🔗 <a href="https://zakon.rada.gov.ua/laws/show/v0312874-18" target="_blank">https://zakon.rada.gov.ua/laws/show/v0312874-18</a>
+          <div class="link-note">Верховна Рада України — Законодавство України</div>
+        </div>
+        <div class="link-block" style="margin-top:6px">
+          🔗 <a href="https://www.nerc.gov.ua/acts/pro-zatverdzhennya-pravil-rozdribnogo-rinku-elektrichnoi-energii" target="_blank">https://www.nerc.gov.ua/acts/pro-zatverdzhennya-pravil-rozdribnogo-rinku-elektrichnoi-energii</a>
+          <div class="link-note">Офіційний вебсайт НКРЕКП</div>
+        </div>
+        <div class="usage">
+          <strong>Застосування в Додатку:</strong> Регулюють взаємовідносини споживача та ОСР після приєднання, укладення публічних договорів, права та обов'язки сторін.
+        </div>
+      </div>
+
+      <!-- 9.4 -->
+      <div class="norm-card">
+        <h3>9.4. Закон України № 4213-IX</h3>
+        <div class="norm-meta">
+          <strong>Реквізити:</strong> Закон України від 14.01.2025 № 4213-IX «Про внесення змін до деяких законів України у сферах енергетики і теплопостачання щодо удосконалення окремих положень, пов'язаних із веденням господарської діяльності та дією воєнного стану в Україні»<br>
+          <strong>Статус:</strong> Чинний з 09.02.2025
+        </div>
+        <div class="link-block">
+          🔗 <a href="https://zakon.rada.gov.ua/laws/show/4213-20" target="_blank">https://zakon.rada.gov.ua/laws/show/4213-20</a>
+          <div class="link-note">Верховна Рада України — Законодавство України</div>
+        </div>
+        <div class="usage">
+          <strong>Застосування в Додатку:</strong> Вніс суттєві зміни до процедур та фінансових механізмів приєднання (зокрема запровадив авансовий платіж 10 євро/кВт), уточнив строки дії технічних умов та відповідальність сторін. Вплинув як на стандартне, так і на нестандартне приєднання.
+        </div>
+      </div>
+
+      <!-- 9.5 -->
+      <div class="norm-card">
+        <h3>9.5. Типовий договір про стандартне приєднання до електричних мереж</h3>
+        <div class="norm-meta">
+          <strong>Реквізити:</strong> Додаток 1 до Кодексу систем розподілу (Постанова НКРЕКП від 14.03.2018 № 310)<br>
+          <strong>Статус:</strong> Чинний (оновлюється разом із Кодексом систем розподілу)
+        </div>
+        <div class="link-block">
+          🔗 <a href="https://zakon.rada.gov.ua/laws/show/v0310874-18#n1289" target="_blank">https://zakon.rada.gov.ua/laws/show/v0310874-18#n1289</a>
+          <div class="link-note">Верховна Рада України — текст Кодексу, Додаток 1</div>
+        </div>
+        <div class="usage">
+          <strong>Застосування в Додатку:</strong> Є публічним договором приєднання, обов'язковим для застосування всіма ОСР. Визначає права та обов'язки замовника й ОСР, строки виконання, вартість та відповідальність сторін.
+        </div>
+      </div>
+
+      <!-- 9.6 -->
+      <div class="norm-card">
+        <h3>9.6. Ставки плати за стандартне приєднання 2026 року</h3>
+        <p style="font-size:14px; color:#444; margin-bottom:10px">Ставки, вбудовані в Додаток, взяті з офіційно затверджених тарифів операторів систем розподілу на 2026 рік.</p>
+        <div class="link-block">
+          🔗 <a href="https://www.nerc.gov.ua/reformuvannya-rinkiv/normativna-baza" target="_blank">https://www.nerc.gov.ua/reformuvannya-rinkiv/normativna-baza</a>
+          <div class="link-note">Офіційний вебсайт НКРЕКП — Нормативна база</div>
+        </div>
+        <div class="usage">
+          <strong>Нормативна база ставок зберігається в Додатку станом на 01.04.2026.</strong> Розробник рекомендує перевіряти актуальність ставок на офіційних сайтах ОСР та НКРЕКП перед прийняттям фінансових рішень.
+        </div>
+      </div>
+
+      <!-- 9.7 -->
+      <h3>9.7. Довідкові ресурси НКРЕКП</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Ресурс</th>
+            <th>Посилання</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Офіційний сайт НКРЕКП</td>
+            <td><a href="https://www.nerc.gov.ua" target="_blank">https://www.nerc.gov.ua</a></td>
+          </tr>
+          <tr>
+            <td>Всі постанови НКРЕКП</td>
+            <td><a href="https://www.nerc.gov.ua/postanovi" target="_blank">https://www.nerc.gov.ua/postanovi</a></td>
+          </tr>
+          <tr>
+            <td>Нормативна база (електроенергетика)</td>
+            <td><a href="https://www.nerc.gov.ua/reformuvannya-rinkiv/normativna-baza" target="_blank">https://www.nerc.gov.ua/reformuvannya-rinkiv/normativna-baza</a></td>
+          </tr>
+          <tr>
+            <td>Законодавство України</td>
+            <td><a href="https://zakon.rada.gov.ua" target="_blank">https://zakon.rada.gov.ua</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="warning">
+        <div class="warn-title">⚠️ Застереження щодо актуальності</div>
+        Законодавство України у сфері електроенергетики регулярно оновлюється. Розробник Додатка докладає зусиль для підтримки актуальності вбудованих ставок та нормативної інформації, однак <strong>не несе відповідальності за будь-які зміни в законодавстві після дати останнього оновлення Додатка</strong>.<br><br>
+        Для прийняття офіційних фінансових рішень рекомендується звертатись безпосередньо до відповідного ОСР або перевіряти чинну редакцію нормативних документів на <a href="https://zakon.rada.gov.ua" target="_blank">zakon.rada.gov.ua</a> та <a href="https://www.nerc.gov.ua" target="_blank">nerc.gov.ua</a>.
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <div class="footer">
+    Ця Політика конфіденційності складена відповідно до вимог Google Play та чинного законодавства України про захист персональних даних (Закон України «Про захист персональних даних» № 2297-VI).
+  </div>
+
+</div><!-- /page -->
 </body>
 </html>
